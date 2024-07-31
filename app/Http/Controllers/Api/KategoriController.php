@@ -128,7 +128,7 @@ class KategoriController extends Controller
             );
         }
      }
-    public function delete($id)
+    public function destroy($id)
     {
         try {
             $kategori = kategori::findOrFail($id);

@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\KategoriController;
 use App\Http\Controllers\Api\TagController;
 use App\Http\Controllers\Api\UserController;
+use App\Http\Controllers\Api\BeritaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,3 +31,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 route::resource('kategori', KategoriController::class)->except(['edit', 'create']);
 route::resource('tag', TagController::class)->except(['edit', 'create']);
 route::resource('user', UserController::class)->except(['edit', 'create']);
+route::resource('berita', BeritaController::class)->except(['edit', 'create']);
